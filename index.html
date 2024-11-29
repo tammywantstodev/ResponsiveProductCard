@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Responsive Product Card</title>
+<link rel="stylesheet" href="./responsiveProductCard.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="product-card">
+        <img src="./backpack.jpg" alt="Backpack" class="product-image">
+        <h2 class="product-name">Jansport Right Pack Backpack</h2>
+        <p class="product-description">This backpack was voted no. 1 on WIRED's <a href="https://www.wired.com/gallery/best-backpacks-for-college/">11 Best Backpacks for College</a>. One 
+        of our best reviewed products, lightweight but durable and spacious.</p>
+        <p class="product-price">$60.00</p>
+        <div class="quantity-container">
+            <button class="quantity-btn" id="decrease">-</button>
+            <span class="quantity-display" id="quantity">1</span>
+            <button class="quantity-btn" id="increase">+</button>
+        </div>
+        <button id="add-to-cart"  onclick="addedToCartColor()">Add to Cart</button>
+        <p id="confirmationMessage" style="display: none;"></p>
+       
+    </div>
+    <script src="./responsiveProductCard.js"></script>
+</body>
+
+
+</html>
